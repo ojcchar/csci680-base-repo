@@ -217,7 +217,6 @@
 									<target>
 										<chmod file="${project.build.directory}/assembled/lib" perm="644" includes="**/*.*" />
 										<chmod dir="${project.build.directory}/assembled/" perm="755" includes="**/*.sh" />
-										<chmod dir="${project.build.directory}/assembled/runtime/bin" perm="755" includes="**/*.*" />
 									</target>
 								</configuration>
 								<goals>
