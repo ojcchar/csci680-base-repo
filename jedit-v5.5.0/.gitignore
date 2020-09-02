@@ -1,0 +1,17 @@
+build
+lib
+
+*.class
+
+.classpath
+.project
+.launch
+.settings/
+target/
+.externalToolBuilders/
+
+
+*.iml
+.DS_Store
+.idea/
+/bin/
