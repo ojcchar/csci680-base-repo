@@ -124,6 +124,7 @@
 					var xpath = javax.xml.xpath.XPathFactory.newInstance().newXPath()
 					var mirrors = xpath.evaluate('/MIRRORS/MIRROR/@ID', document, javax.xml.xpath.XPathConstants.NODESET)
 					var artifactPatterns = ''
+					artifactPatterns += '<artifact pattern="jar:http://master.dl.sourceforge.net/project/jedit-plugins/[artifact]/[revision]/[artifact]-[revision]-bin.zip!/[artifact].jar" />\n'
 					for (i = 0; i < mirrors.getLength(); i++) {
 						artifactPatterns += '<artifact pattern="jar:http://'
 								    + mirrors.item(i).getTextContent()
