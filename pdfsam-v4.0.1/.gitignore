@@ -8,7 +8,7 @@ target/
 .externalToolBuilders/
 
 # Package Files #
-*.jar
+#*.jar
 *.war
 *.ear
 
