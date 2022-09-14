@@ -1,5 +1,7 @@
+#!/bin/sh
+
 #change the JAVA_HOME path (JRE/JDK 11+)
-export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home"
 
 mvn install:install-file "-Dfile=extra_libs/sejda-injector-1.0.2.jar" "-DgroupId=org.sejda" "-DartifactId=sejda-injector" "-Dversion=1.0.2" "-Dpackaging=jar" "-Dsources=extra_libs/sejda-injector-1.0.2-sources.jar"
 mvn install -DskipTests -Drelease -Dgpg.skip
